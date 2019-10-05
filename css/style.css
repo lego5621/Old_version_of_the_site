@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 1vw;
+}
+
+a{
+    color: grey;
+}
+
+/* Позиционирование глобального меню */
+.wrap{
+    /* height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition-duration: 1s; */
+
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: auto; 
+}
+
+.wrap1_svg{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.wrap1_menu{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.wrap1_projects{
+    width: 0%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* overflow: auto; */
+    transition-duration: 1s;
+    overflow-x: hidden;
+}
+
+.wrap1_skills{
+    width: 0%;
+    height: 100%;
+    /* overflow: auto; */
+    transition-duration: 1s;
+    overflow-x: hidden;
+}
+
+.wrap1_info{
+    width: 0%;
+    height: 100vh;
+    /* overflow: hidden; */
+    overflow: auto;
+    transition-duration: 1s;
+    overflow-x: hidden;
+}
+
+.wrap2_projects{
+    width: 100%;
+    width: 69vw;
+    margin: 0 auto; 
+    font-family: 'Vollkorn', serif;
+    margin-left: 1%;
+}
+
+.wrap2_skills{
+    width: 100%;
+    width: 69vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.6rem;
+    margin-left: 1%;
+}
+
+.wrap2_info{
+    width: 100%;
+    width: 69vw; 
+    margin: 0 auto;
+    font-family: 'Vollkorn', serif;
+    margin-left: 1%;
+}
+
+
+
+
+
+/* ................. */
+
+.menu{
+    font-family: 'Mansalva', cursive;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 8rem;
+    transition-duration: 1s;
+    overflow: auto;
+}
+
+.text_menu{
+    color:white;
+    text-decoration:underline;
+}
+
+.text_menu:hover{
+    color: grey;
+    transition-duration: 0.5s; 
+    cursor: pointer;
+}
+
+.home{
+    background: black;
+    flex: 1;
+    text-align:right;
+}
+
+.projects{
+    background: black;
+    flex: 1;
+    text-align:left
+}
+
+.skill{
+    background: black;
+    flex: 1;
+    text-align:right
+}
+
+.info{
+    background: black;
+    flex: 1;
+    text-align:left
+}
+
+.wrap2_svg{
+    transition-duration: 1s;
+    overflow: hidden;
+    margin: 0;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+svg{
+	display: block;
+	margin: 0 auto;
+	min-width: 100%;
+	min-height: 100%;
+    animation: rotate 40s infinite linear;
+    min-width: 50vw;
+}
+
+@keyframes rotate{
+	0%   {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)}
+}
+
+
+/* Скрол бар */
+::-webkit-scrollbar { width: 6px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: none; height: 0; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: rgb(0, 0, 0); border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+
+/* Анимация */
+.activ{
+    width: 70%;
+}
+
+.menu_activ{
+    width: 30%;
+}
+
+.wrap1_svg_activ{
+    width: 0;
+}
+
+
+
+.wrap_text{
+    display: flex;
+}
+
+.wrap_skills_text{
+    display: flex;
+}
+
+
+
+/* skills */
+.wrap_skills_text{
+    width: 100%;
+}
+
+
+.wrap_skills_skills{
+    width: 100%;
+    display: flex;
+}
+
+.wrap_skills_skills_left, .wrap_skills_skills_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_skill{
+    font-size: 1.6rem;
+    font-family: 'Vollkorn', serif;
+    margin: 4%
+}
+
+.content_skill_table{
+    border-left: 4px solid black;
+}
+
+.wrap_skills_skills_right{
+    position: relative;
+    bottom: 7vw;
+}
+
+.skills_text{
+    font-size: 2rem;
+    margin: 1% 0.3%;
+}
+
+.black_text{
+    background: black;
+    color: white;
+}
+
+.text_:after {
+    content: '';
+    width: 1rem;
+    height: 0.18rem;
+    background: black;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 0.5s linear infinite alternate;
+  }
+  
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* информация обо мне */
+
+.info_for_mi{
+    width: 100%;
+    display: flex;
+}
+
+/* ?????? */
+.table_info1{
+    font-size: 1.9rem;
+    width: 100%;
+    margin: 0 3%;
+}
+
+.info_my_story{
+    width: 100%;
+    display: flex; 
+}
+
+.info_bloc_left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.info_bloc_right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    bottom: 9vw;
+    margin-left: 2%;
+}
+
+.info_bloc_left_table, .info_bloc_1_table, .info_bloc_2_table{
+    border-left: 4px solid black;
+    font-size: 1.9rem;
+    margin: 6% auto;
+}
+
+.info_src_text_text{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.info_img{
+    width: 50%;
+}
+
+img{
+    width: 100%;
+}
+
+/* Работы */
+.projects_zagl{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* моб версия */
+
+.mob_menu{
+    text-align: center;
+    font-size: 2rem;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    html{
+        font-size: 11px;
+    }
+
+    .menu{
+        width: 100%;
+        font-size: 12rem;
+    }
+
+    .wrap1_svg{width: 0}
+
+    .mob_menu{
+        display: block;
+    }
+
+    .activ{
+        width: 100%;
+    }
+    
+    .menu_activ{
+        width: 0%;
+    }
+    
+    .wrap1_svg_activ{
+        width: 0;
+    }
+
+    .wrap2_skills, .wrap2_projects, .wrap2_info{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 637px) {
+
+    html{
+        font-size: 9px;
+    }
+
+    .menu{
+        font-size: 12rem;
+    }
+
+    .info_for_mi, .info_my_story, .wrap_skills_skills{
+        flex-direction: column;
+    }
+
+    .info_bloc_right, .info_bloc_left, .info_img, .wrap_skills_skills_right, .wrap_skills_skills_left{
+        position: static;
+        width: 100%;
+    }
+
+    .info_text_for_mi{
+        margin: auto;
+    }
+}
+
+    @media (max-width: 414px) {
+        
+        html{
+            font-size: 9px;
+        }
+    
+        .menu{
+            font-size: 9rem;
+        }
+
+        .info_for_mi, .info_my_story, .wrap_skills_skills{
+            flex-direction: column;
+        }
+    
+        .info_bloc_right, .info_bloc_left, .info_img, .wrap_skills_skills_right, .wrap_skills_skills_left{
+            position: static;
+            width: 100%;
+        }
+    
+        .info_text_for_mi{
+            margin: auto;
+        }
+    }

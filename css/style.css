@@ -112,7 +112,7 @@ a{
     flex-direction: column;
     font-size: 8rem;
     transition-duration: 1s;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .text_menu{

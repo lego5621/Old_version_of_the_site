@@ -274,6 +274,7 @@ svg{
 .info_for_mi{
     width: 100%;
     display: flex;
+    overflow: auto;
 }
 
 /* ?????? */
@@ -286,6 +287,7 @@ svg{
 .info_my_story{
     width: 100%;
     display: flex; 
+
 }
 
 .info_bloc_left{
@@ -307,6 +309,10 @@ svg{
     border-left: 4px solid black;
     font-size: 1.9rem;
     margin: 6% auto;
+}
+
+.info_bloc_2_table{
+    margin-bottom: -6vw;
 }
 
 .info_src_text_text{
@@ -376,6 +382,10 @@ img{
     .wrap2_skills, .wrap2_projects, .wrap2_info{
         width: 100vw;
     }
+
+    .info_bloc_2_table{
+        margin: 6% auto;
+    }
 }
 
 @media (max-width: 637px) {
@@ -400,28 +410,36 @@ img{
     .info_text_for_mi{
         margin: auto;
     }
+
+    .info_bloc_2_table{
+        margin: 6% auto;
+    }
 }
 
-    @media (max-width: 414px) {
+@media (max-width: 414px) {
         
-        html{
-            font-size: 9px;
-        }
-    
-        .menu{
-            font-size: 9rem;
+    html{
+        font-size: 9px;
         }
 
-        .info_for_mi, .info_my_story, .wrap_skills_skills{
-            flex-direction: column;
-        }
-    
-        .info_bloc_right, .info_bloc_left, .info_img, .wrap_skills_skills_right, .wrap_skills_skills_left{
-            position: static;
-            width: 100%;
-        }
-    
-        .info_text_for_mi{
-            margin: auto;
-        }
+    .menu{
+        font-size: 9rem;
     }
+
+    .info_for_mi, .info_my_story, .wrap_skills_skills{
+        flex-direction: column;
+    }
+    
+    .info_bloc_right, .info_bloc_left, .info_img, .wrap_skills_skills_right, .wrap_skills_skills_left{
+        position: static;
+        width: 100%;
+    }
+    
+    .info_text_for_mi{
+        margin: auto;
+    }
+
+    .info_bloc_2_table{
+        margin: 6% auto;
+    }
+}
